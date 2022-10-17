@@ -1,6 +1,6 @@
 #pragma once
 
-struct plates
+struct platesLBS
 {
 	int twoPointFives = 0;
 	int fives = 0;
@@ -9,5 +9,18 @@ struct plates
 	int fortyFives = 0;
 };
 
-float getWeight();
-void calcPlates(float weight);
+struct platesKG
+{
+	int onePointTwoFives = 0;
+	int twoPointFives = 0;
+	int fives = 0;
+	int tens = 0;
+	int fifteens = 0;
+	int twenties = 0;
+	int twentyFives = 0;
+};
+
+std::string getUnits();
+void getWeight(std::string plateUnits);
+void calcPlatesLBS(float weight);
+void calcPlatesKG(float weight);

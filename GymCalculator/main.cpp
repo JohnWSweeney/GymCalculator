@@ -1,11 +1,12 @@
 #include<iostream>
+#include<string>
 #include"math.h"
 
 int main()
 {
+	std::string plateUnits = getUnits();
 	while (true)
 	{
-		float weightInput = getWeight();
-		calcPlates(weightInput);
+		getWeight(plateUnits);
 	};
 };
