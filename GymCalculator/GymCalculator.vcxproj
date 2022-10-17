@@ -23,6 +23,7 @@
     <ProjectGuid>{E0EE4B68-92DF-48E4-8577-D0CF4431C2EB}</ProjectGuid>
     <RootNamespace>GymCalculator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>GymCalculator</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

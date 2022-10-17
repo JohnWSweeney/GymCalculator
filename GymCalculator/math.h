@@ -2,7 +2,7 @@
 
 struct plates
 {
-	int twoFives = 0;
+	int twoPointFives = 0;
 	int fives = 0;
 	int tens = 0;
 	int twentyFives = 0;
