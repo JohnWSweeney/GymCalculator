@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 struct platesLBS
 {
@@ -9,7 +10,7 @@ struct platesLBS
 	int fortyFives = 0;
 };
 
-struct platesKG
+struct platesKg
 {
 	int onePointTwoFives = 0;
 	int twoPointFives = 0;
@@ -20,7 +21,12 @@ struct platesKG
 	int twentyFives = 0;
 };
 
-std::string getUnits();
-void getWeight(std::string plateUnits);
-void calcPlatesLBS(float weight);
-void calcPlatesKG(float weight);
+// start.cpp
+float getWeight(std::string desiredUnits);
+void start();
+
+// math.cpp
+float LBStoKg(float weightLBS);
+float KgtoLBS(float weightKg);
+void calcPlatesLBS(float weightLBS);
+void calcPlatesKg(float weightKg);

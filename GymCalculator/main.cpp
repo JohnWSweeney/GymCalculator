@@ -1,12 +1,7 @@
-#include<iostream>
-#include<string>
-#include"math.h"
+#include "header.h"
 
 int main()
 {
-	std::string plateUnits = getUnits();
-	while (true)
-	{
-		getWeight(plateUnits);
-	};
+	std::cout << "gymCalculator v1.0.0" << std::endl;
+	start();
 };
