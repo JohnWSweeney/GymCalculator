@@ -21,5 +21,5 @@ The basic order of operations is as follows:
 
 ### Known Issues
 - Unit conversion between kg/lbs needs a rounding function.
-- Eerror/exception handling.
+- Error/exception handling.
 - User input is case-sensitive.
