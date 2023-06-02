@@ -1,4 +1,5 @@
-#include "header.h"
+#include "math.h"
+#include "dataStructs.h"
 
 float LBStoKg(float weightLBS)
 {
@@ -16,9 +17,9 @@ void calcPlatesLBS(float weightLBS)
 {
 	platesLBS myPlatesLBS;
 	float plateWeight = weightLBS - 45; //
-	std::cout << "Weight in plates: " << plateWeight << " lbs" << std::endl;
+	std::cout << "Weight in plates: " << plateWeight << " lbs\n";
 	float sideWeight = plateWeight / 2;
-	std::cout << "Weight per side of bar: " << sideWeight << " lbs" << std::endl;
+	std::cout << "Weight on each side of the bar: " << sideWeight << " lbs\n";
 
 	while (sideWeight >= 45)
 	{
@@ -46,23 +47,23 @@ void calcPlatesLBS(float weightLBS)
 		sideWeight = sideWeight - 2.5;
 	};
 
-	std::cout << "-------------------------" << std::endl;
-	std::cout << "2.5s: " << myPlatesLBS.twoPointFives << std::endl;
-	std::cout << "5s:   " << myPlatesLBS.fives << std::endl;
-	std::cout << "10s:  " << myPlatesLBS.tens << std::endl;
-	std::cout << "25s:  " << myPlatesLBS.twentyFives << std::endl;
-	std::cout << "45s:  " << myPlatesLBS.fortyFives << std::endl;
-	std::cout << "-------------------------" << std::endl;
-	std::cout << "Remainder: " << sideWeight << " lbs" << std::endl;
+	std::cout << "-------------------------\n";
+	std::cout << "2.5s: " << myPlatesLBS.twoPointFives << '\n';
+	std::cout << "5s:   " << myPlatesLBS.fives << '\n';
+	std::cout << "10s:  " << myPlatesLBS.tens << '\n';
+	std::cout << "25s:  " << myPlatesLBS.twentyFives << '\n';
+	std::cout << "45s:  " << myPlatesLBS.fortyFives << '\n';
+	std::cout << "-------------------------\n";
+	std::cout << "Remainder: " << sideWeight << " lbs\n";
 };
 
 void calcPlatesKg(float weightKg)
 {
 	platesKg myPlatesKg;
 	float plateWeight = weightKg - 20; //
-	std::cout << "Weight in plates: " << plateWeight << " kg" << std::endl;
+	std::cout << "Weight in plates: " << plateWeight << " kg\n";
 	float sideWeight = plateWeight / 2;
-	std::cout << "Weight per side of bar: " << sideWeight << " kg" << std::endl;
+	std::cout << "Weight on each side of the ba: " << sideWeight << " kg\n";
 
 	while (sideWeight >= 25)
 	{
@@ -100,14 +101,14 @@ void calcPlatesKg(float weightKg)
 		sideWeight = sideWeight - 1.25;
 	};
 
-	std::cout << "-------------------------" << std::endl;
-	std::cout << "1.25s: " << myPlatesKg.onePointTwoFives << std::endl;
-	std::cout << "2.5s: " << myPlatesKg.twoPointFives << std::endl;
-	std::cout << "5s:   " << myPlatesKg.fives << std::endl;
-	std::cout << "10s:  " << myPlatesKg.tens << std::endl;
-	std::cout << "15s:  " << myPlatesKg.fifteens << std::endl;
-	std::cout << "20s:  " << myPlatesKg.twenties << std::endl;
-	std::cout << "25s:  " << myPlatesKg.twentyFives << std::endl;
-	std::cout << "-------------------------" << std::endl;
-	std::cout << "Remainder: " << sideWeight << " lbs" << std::endl;
+	std::cout << "-------------------------\n";
+	std::cout << "1.25s: " << myPlatesKg.onePointTwoFives << '\n';
+	std::cout << "2.5s: " << myPlatesKg.twoPointFives << '\n';
+	std::cout << "5s:   " << myPlatesKg.fives << '\n';
+	std::cout << "10s:  " << myPlatesKg.tens << '\n';
+	std::cout << "15s:  " << myPlatesKg.fifteens << '\n';
+	std::cout << "20s:  " << myPlatesKg.twenties << '\n';
+	std::cout << "25s:  " << myPlatesKg.twentyFives << '\n';
+	std::cout << "-------------------------\n";
+	std::cout << "Remainder: " << sideWeight << " lbs\n";
 };

@@ -1,6 +1,14 @@
 #pragma once
 #include <iostream>
 
+struct userData
+{
+	std::string plateUnits;
+	std::string preferredUnits;
+	float desiredWeight;
+	float convertedWeight;
+};
+
 struct platesLBS
 {
 	int twoPointFives = 0;
@@ -20,13 +28,3 @@ struct platesKg
 	int twenties = 0;
 	int twentyFives = 0;
 };
-
-// start.cpp
-float getWeight(std::string desiredUnits);
-void start();
-
-// math.cpp
-float LBStoKg(float weightLBS);
-float KgtoLBS(float weightKg);
-void calcPlatesLBS(float weightLBS);
-void calcPlatesKg(float weightKg);

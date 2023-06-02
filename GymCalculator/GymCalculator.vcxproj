@@ -129,7 +129,9 @@
     <ClCompile Include="start.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header.h" />
+    <ClInclude Include="dataStructs.h" />
+    <ClInclude Include="math.h" />
+    <ClInclude Include="start.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md" />

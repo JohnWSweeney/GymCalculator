@@ -1,25 +1,34 @@
 # gymCalculator
 
-A Windows console app that calculates the number of barbell plates needed for a desired weight. The app works for kg and lbs plates and converts between units if your desired weight units are not the same as your plates.
+A Windows console app that calculates what barbell plates are needed for a desired weight. The app works for kilogram (kg) and pound (lbs) plates and converts between units if your preferred weight units are not the same as your plates.
 
-### Motivation
-My gym has a mix of kg and lbs barbell plates, so I'm frequently converting between those units to get the desired amount of weight on the bar.
-I'd rather automate the conversion and focus on the workout. Enter gymCalculator.
+## Motivation
+I prefer to think about weightlifting in pounds but my gym has a mix of kilogram and pound barbell plates. Converting between units to get the desired amount of weight on the bar can be distracting and confusing. If the conversion were automated, I could focus on the workout instead. Enter gymCalculator.
 
-In addition to being personally useful, this project is an opportunity to practice coding fundamentals. Function design and a program structure that calls the appropriate function in the proper order were key concepts. Plus, this project serves as a prototype for an iOS app backend I'm planning, which would be really convienient in the gym.
+In addition to being personally useful, this project was an opportunity to refresh my C-style coding skills after many years away. Function design, program structure, and error handling were key concepts.
 
-### Design Overview
-The basic order of operations is as follows:
-- Ask the user what units their plates are in (kg/lbs).
-- Ask the user what units their desired weight is in (kg/lbs).
+## Design
+The basic order of operations is:
+- Ask the user (1) what units their plates are in and (2) what are their preferred units (kg/lbs).
+	- For example, if your plates are in kg but prefer to think of your lifts in pounds:
+<br/>Enter "kg" for question 1 and "lbs" for question 2.
+	- Note: Inputs are case-sensitive and must be lower-case.
+
+- Ask the user for their desired weight on the bar in their prefered units.
+	- Enter the number without units.
+<br/> For example, "225" or "61.5", not "89 lbs" or "111.5 kg".
 - Convert the desired weight to the plates' units, if they are not the same.
-- Calculate the type and number of plates needed for the desired weight, accounting for the weight of the bar (45 lbs, 20 kg).
+- Calculate the type and number of plates needed for the desired weight, accounting for the weight of the bar. Bar weight is assumed to be 45 lbs (20 kg).
 - Display results.
 
-### Future Updates
+## Future Updates
+- Add rounding to unit conversion functions.
 - iOS version.
 
-### Known Issues
-- Unit conversion between kg/lbs needs a rounding function.
-- Error/exception handling.
-- User input is case-sensitive.
+## Download
+[gymCalculator v1.0.1](https://github.com/JohnWSweeney/echoTool/releases/download/v1.0.1/gymCalculator_v1_0_1.exe) 23 kB]
+
+## ChangeLog <br/>
+v1.0.1
+- Added more robust error handling.
+- Updated README.
