@@ -26,7 +26,7 @@ The basic order of operations is:
 - iOS version.
 
 ## Download
-[gymCalculator v1.0.1](https://github.com/JohnWSweeney/echoTool/releases/download/v1.0.1/gymCalculator_v1_0_1.exe) 23 kB]
+[gymCalculator v1.0.1](https://github.com/JohnWSweeney/echoTool/releases/download/v1.0.1/gymCalculator_v1_0_1.exe) [23 kB]
 
 ## ChangeLog <br/>
 v1.0.1
